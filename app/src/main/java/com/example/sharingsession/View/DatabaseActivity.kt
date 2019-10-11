@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.sharingsession.Contract.ContractInterface
 import com.example.sharingsession.Presenter.MainActivityPresenter
 import com.example.sharingsession.R
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_database.*
 
 class DatabaseActivity : AppCompatActivity(), ContractInterface.View {
 
@@ -13,7 +13,7 @@ class DatabaseActivity : AppCompatActivity(), ContractInterface.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_database)
 
         presenter = MainActivityPresenter(this)
     }

@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".View.DatabaseRoom"
+                android:name=".View.DatabaseRoomActivity"
                 tools:ignore="InnerclassSeparator"></activity>
     </application>
 

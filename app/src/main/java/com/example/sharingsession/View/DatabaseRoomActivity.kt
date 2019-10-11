@@ -10,7 +10,7 @@ import com.example.sharingsession.db.Pekerjaan
 import com.example.sharingsession.db.PekerjaanDatabase
 import kotlinx.android.synthetic.main.activity_database_room.*
 
-class DatabaseRoom : AppCompatActivity() {
+class DatabaseRoomActivity : AppCompatActivity() {
 
     var dataArray = arrayListOf<String>()
     private var karyawanDatabase: PekerjaanDatabase? = null
@@ -32,7 +32,7 @@ class DatabaseRoom : AppCompatActivity() {
         }
     }
 
-    private class DeleteTask(var context: DatabaseRoom) : AsyncTask<Void, Void, Boolean>() {
+    private class DeleteTask(var context: DatabaseRoomActivity) : AsyncTask<Void, Void, Boolean>() {
         override fun doInBackground(vararg params: Void?): Boolean {
             context.karyawanDatabase!!.pekerjaanDao().deleteAll()
             return true
@@ -48,7 +48,7 @@ class DatabaseRoom : AppCompatActivity() {
         }
     }
 
-    private class InsertTask(var context: DatabaseRoom, var karyawan: Pekerjaan) : AsyncTask<Void, Void, Boolean>() {
+    private class InsertTask(var context: DatabaseRoomActivity, var karyawan: Pekerjaan) : AsyncTask<Void, Void, Boolean>() {
         override fun doInBackground(vararg params: Void?): Boolean {
             context.karyawanDatabase!!.pekerjaanDao().insert(karyawan)
             return true
@@ -59,7 +59,7 @@ class DatabaseRoom : AppCompatActivity() {
             }
         }
     }
-    private class GetDataFromDb(var context: DatabaseRoom) : AsyncTask<Void, Void, List<Pekerjaan>>() {
+    private class GetDataFromDb(var context: DatabaseRoomActivity) : AsyncTask<Void, Void, List<Pekerjaan>>() {
         override fun doInBackground(vararg params: Void?): List<Pekerjaan> {
             return context.karyawanDatabase!!.pekerjaanDao().getAllPekerjaan()
         }
