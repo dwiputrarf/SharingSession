@@ -7,7 +7,7 @@ import com.example.sharingsession.Presenter.MainActivityPresenter
 import com.example.sharingsession.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), ContractInterface.View {
+class DatabaseActivity : AppCompatActivity(), ContractInterface.View {
 
     private var presenter: MainActivityPresenter? = null
 
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), ContractInterface.View {
 //        val listener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
 //            btnTimePick.text = "$hourOfDay : $minute"
 //        }
-//        val timePicker = TimePickerDialog(this@MainActivity, listener, 0, 0, false)
+//        val timePicker = TimePickerDialog(this@DatabaseActivity, listener, 0, 0, false)
 //        val listener2 = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
 //            btnDatePick.text = "$dayOfMonth / $month / $year"
 //        }

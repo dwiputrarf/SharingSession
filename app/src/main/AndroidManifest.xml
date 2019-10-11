@@ -18,9 +18,9 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".View.MainActivity"
+                android:name=".View.DatabaseActivity"
                 tools:ignore="InnerclassSeparator"></activity>
-        <activity android:name=".HomeActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

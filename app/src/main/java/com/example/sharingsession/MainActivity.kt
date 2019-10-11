@@ -3,7 +3,7 @@ package com.example.sharingsession
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class HomeActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

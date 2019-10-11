@@ -14,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
     internal val mRunnable: Runnable = Runnable {
         if (!isFinishing) {
             //GotoHomeActivity
-            val intent = Intent(applicationContext, HomeActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
