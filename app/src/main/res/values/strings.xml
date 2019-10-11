@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SharingSession</string>
+    <string name="splashscreen">SplashScreen</string>
 </resources>
