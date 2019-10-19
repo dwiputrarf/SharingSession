@@ -19,17 +19,11 @@
         </activity>
         <activity
                 android:name=".View.DatabaseActivity"
-                tools:ignore="InnerclassSeparator"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+                tools:ignore="InnerclassSeparator" />
+        <activity android:name=".MainActivity" />
         <activity
                 android:name=".View.DatabaseRoomActivity"
-                tools:ignore="InnerclassSeparator"></activity>
+                tools:ignore="InnerclassSeparator" />
     </application>
 
 </manifest>
