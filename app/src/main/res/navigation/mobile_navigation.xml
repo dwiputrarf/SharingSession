@@ -12,10 +12,6 @@
         <action
                 android:id="@+id/action_firstFragment_to_secondFragment"
                 app:destination="@id/second_dest">
-<!--            <argument-->
-<!--                    android:name="name"-->
-<!--                    android:defaultValue="Mobile Dev"-->
-<!--                    app:argType="string" />-->
         </action>
     </fragment>
     <fragment
